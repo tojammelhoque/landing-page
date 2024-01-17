@@ -30,8 +30,11 @@ body {
 }
 
 .hero {
+  display: flex;
   height: 280px;
   width: 100%;
+  align-items: center;
+  justify-content: center;
   background-color: black;
 }
 
@@ -40,7 +43,6 @@ body {
   text-align: center;
   font-size: 4rem;
   font-weight: 300;
-  padding-top: 80px;
 }
 
 .hero h2 span {
@@ -56,7 +58,6 @@ body {
 
 .box {
   height: 450px;
-  /* border: 2px solid black; */
   width: 320px;
   background-color: white;
   border-radius: 10px;
@@ -113,11 +114,9 @@ body {
 }
 
 .bio-box1 {
-  width: 50%;
   background-color: #515603;
 }
 .bio-box2 {
-  width: 50%;
   background-color: #722300;
 }
 
@@ -156,4 +155,62 @@ footer h6 {
   text-align: center;
   font-size: 1rem;
   font-weight: 300;
+}
+
+@media screen and (max-width: 430px) {
+  .header {
+    height: 30vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .text-section {
+    width: 68vw;
+    padding-top: 20px;
+    margin: 0 auto;
+    font-size: 0.8rem;
+  }
+  .lg-font {
+    font-size: 1.3rem;
+  }
+
+  .hero {
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero h2 {
+    font-size: 0.95rem;
+    padding-top: 0px;
+  }
+
+  .hero h2 span {
+    font-size: 2rem;
+  }
+  .service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .bio-card {
+    flex-direction: column;
+  }
+  .bio-box1 {
+    width: 100%;
+  }
+
+  .bio-box2 {
+    width: 100%;
+  }
+
+  footer {
+    height: 50px;
+    font-size: 0.8rem;
+    margin-top: 178px;
+  }
 }
